@@ -53,8 +53,10 @@ def t_plot(path, T_beg, T_end):
     t0 = t[nt0]
     t0 = t0-T_beg
     audio_data0 = audio_data[nt0]
-
+    
+    plt.figure(figsize=(15,8))
     plt.plot(t0, audio_data0, color='blue', label='Small')
+    plt.grid(True)
     plt.ylabel('Amplitude')
     plt.xlabel('Time [sec]')
     plt.show()
