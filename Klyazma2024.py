@@ -39,7 +39,7 @@ def build_spec(f, t, sxx, upper_edge=3000):
 
     plt.figure(figsize=(15,8))
     plt.colormaps["plasma"]
-    plt.pcolormesh(t, f, sxx, shading='auto', vmax = 1)
+    plt.pcolormesh(t, f, sxx, shading='auto')
     plt.ylabel('Frequency [Hz]')
     plt.xlabel('Time [sec]')
     plt.ylim([0, upper_edge])
@@ -53,7 +53,7 @@ def t_plot(path, T_beg, T_end):
     t0 = t[nt0]
     t0 = t0-T_beg
     audio_data0 = audio_data[nt0]
-    
+
     plt.figure(figsize=(15,8))
     plt.plot(t0, audio_data0, color='blue', label='Small')
     plt.grid(True)
