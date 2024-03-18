@@ -12,3 +12,10 @@ _deps
 specgram1x.ipynb
 specgram2x.ipynb
 TASCAM_0035S1.wav
+TASCAM_Files/Ice.wav
+TASCAM_Files/TASCAM_0018S3.wav
+TASCAM_Files/TASCAM_0034S1.wav
+TASCAM_Files/TASCAM_0035S2.wav
+TASCAM_Files/TASCAM_0035S3.wav
+TASCAM_Files/TASCAM_0035S4.wav
+*.pyc
