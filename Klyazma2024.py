@@ -38,7 +38,19 @@ def full_process(path, T_beg, T_end, NFFT):
     plt.pcolormesh(t, f, sxx, shading='auto', vmax = 1)
     plt.ylabel('Frequency [Hz]')
     plt.xlabel('Time [sec]')
-    plt.ylim([0, 3000])
+    plt.ylim([0, 5000])
     plt.show()
     
     return f, t, sxx
+
+def t_plot(path, T_beg, T_end):
+
+    sample_rate, audio_data = wavfile.read(path)
+    t = np.arange(len(audio_data))/sample_rate
+    nt0 = (t > T_beg) & (t < T_end)
+    t0 = t[nt0]
+    t0 = t0-T_beg
+    audio_data0 = audio_data[nt0]
+
+    plt.plot(t0, audio_data0, color='blue', label='Small')
+    plt.show
