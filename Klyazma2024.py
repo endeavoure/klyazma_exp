@@ -33,15 +33,17 @@ def full_process(path, T_beg, T_end, NFFT):
     audio_data, sample_rate = get_audio(path, T_beg, T_end)
     f, t, sxx = spec_plot(audio_data, sample_rate, NFFT)
     
+    return f, t, sxx
+
+def build_spec(f, t, sxx, upper_edge=3000):
+
     plt.figure(figsize=(15,8))
     plt.colormaps["plasma"]
     plt.pcolormesh(t, f, sxx, shading='auto', vmax = 1)
     plt.ylabel('Frequency [Hz]')
     plt.xlabel('Time [sec]')
-    plt.ylim([0, 5000])
+    plt.ylim([0, upper_edge])
     plt.show()
-    
-    return f, t, sxx
 
 def t_plot(path, T_beg, T_end):
 
@@ -55,4 +57,5 @@ def t_plot(path, T_beg, T_end):
     plt.plot(t0, audio_data0, color='blue', label='Small')
     plt.ylabel('Amplitude')
     plt.xlabel('Time [sec]')
-    plt.show
+    plt.show()
+    plt.close()
