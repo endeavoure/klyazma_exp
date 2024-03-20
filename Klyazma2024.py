@@ -39,7 +39,7 @@ def build_spec(f, t, sxx, upper_edge=3000):
 
     plt.figure(figsize=(15,8))
     plt.colormaps["plasma"]
-    plt.pcolormesh(t, f, sxx, shading='auto')
+    plt.pcolormesh(t, f, sxx, shading='auto', vmax=1)
     plt.ylabel('Frequency [Hz]')
     plt.xlabel('Time [sec]')
     plt.ylim([0, upper_edge])
