@@ -45,9 +45,7 @@ def build_spec(f, t, sxx, upper_edge=3000):
     plt.ylim([0, upper_edge])
     plt.show()
 
-def t_plot(path, T_beg, T_end):
-
-    sample_rate, audio_data = wavfile.read(path)
+def t_plot(audio_data, sample_rate, T_beg, T_end):
     t = np.arange(len(audio_data))/sample_rate
     nt0 = (t > T_beg) & (t < T_end)
     t0 = t[nt0]
