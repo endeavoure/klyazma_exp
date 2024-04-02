@@ -59,3 +59,13 @@ def t_plot(audio_data, sample_rate, T_beg, T_end):
     plt.xlabel('Time [sec]')
     plt.show()
     plt.close()
+
+
+def t_plot2(audio_data, sample_rate, t):
+    plt.figure(figsize=(15,8))
+    plt.plot(t, audio_data, color='blue', label='Small')
+    plt.grid(True)
+    plt.ylabel('Amplitude')
+    plt.xlabel('Time [sec]')
+    plt.show()
+    plt.close()
