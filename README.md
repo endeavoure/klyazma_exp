@@ -8,3 +8,5 @@
 Получилось классно - почти везде Гаусс-like, как и ожидалось (ЦПТ)
 
 В репо представлен не весь код. Ниже прикрепляю ссылку на презы для более подробного ознакомления:
+https://docs.google.com/presentation/d/11v1ONC0O0UOLwYyjncf2WmUtKFtEDNg-/edit?usp=drive_link&ouid=105914986230119701343&rtpof=true&sd=true
+https://docs.google.com/presentation/d/1qmVbbcBkI4hwfmxpNcM4UYskc3s9zoOu/edit?usp=drive_link&ouid=105914986230119701343&rtpof=true&sd=true
